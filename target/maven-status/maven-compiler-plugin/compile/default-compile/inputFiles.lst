@@ -1,4 +1,6 @@
 D:\work\ManagerPlaybill\src\main\java\ru\netology\Main.java
 D:\work\ManagerPlaybill\src\main\java\ru\netology\repository\CartRepository.java
+D:\work\ManagerPlaybill\src\main\java\ru\netology\domain\Cinema.java
 D:\work\ManagerPlaybill\src\main\java\ru\netology\domain\PurchaseItem.java
 D:\work\ManagerPlaybill\src\main\java\ru\netology\manager\CartManager.java
+D:\work\ManagerPlaybill\src\main\java\ru\netology\manager\AfishaManager.java

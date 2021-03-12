@@ -68,7 +68,7 @@ class AfishaManagerTest {
         expected[1] = second;
         expected[0] = third;
 
-        AfishaManager manager = new AfishaManager();
+        AfishaManager manager = new AfishaManager(15);
         manager.add(first);
         manager.add(second);
         manager.add(third);

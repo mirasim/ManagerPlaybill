@@ -4,8 +4,14 @@ import ru.netology.domain.Cinema;
 
 
 public class AfishaManager {
+    public AfishaManager(){
+        cinemaList = new Cinema[10];
+    }
+    public AfishaManager(int count){
+        cinemaList = new Cinema[count];
+    }
 
-    private Cinema[] cinemaList = new Cinema[10];
+    private Cinema[] cinemaList;
     private int cinemaCount = 0;
 
     public void add(Cinema item) {

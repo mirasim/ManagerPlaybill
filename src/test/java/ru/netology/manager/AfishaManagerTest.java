@@ -39,41 +39,4 @@ class AfishaManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    void testGetAllLess() {
-        Cinema first = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-        Cinema second = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-        Cinema third = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-
-        Cinema[] expected = new Cinema[2];
-        expected[1] = second;
-        expected[0] = third;
-
-        AfishaManager manager = new AfishaManager();
-        manager.add(first);
-        manager.add(second);
-        manager.add(third);
-        Cinema[] actual = manager.getAll(2);
-
-        assertArrayEquals(expected, actual);
-    }
-    @Test
-    void testGetAllMore() {
-        Cinema first = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-        Cinema second = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-        Cinema third = new Cinema("BloodShot", "Action", "http://ya.ru/picture1.jpeg");
-
-        Cinema[] expected = new Cinema[3];
-        expected[2] = first;
-        expected[1] = second;
-        expected[0] = third;
-
-        AfishaManager manager = new AfishaManager(15);
-        manager.add(first);
-        manager.add(second);
-        manager.add(third);
-        Cinema[] actual = manager.getAll(5);
-
-        assertArrayEquals(expected, actual);
-    }
 }
